@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto de la pagina</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, mqximun-scale=1.0, minimun-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <script>
+        function mostrarAlerta() {
+            var respuesta = confirm("¿Estas seguro de mandar tu mensaje?");
+            if (respuesta == true) {
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="mensaje.php" method="post" class="form">
+            <div class="form-header">
+                <header>
+                    <h2 class="form-title">CONTACT</h2>
+                </header>
+              
+            </div>
+            <label for="nombre" class="form-label">Nombres:</label>
+            <input type="text" name="nombre" id="nombre" class="form-input" placeholder="Escriba su nombre">
+
+            <label form="direccion" class="form-label"> Direccion</label>
+            <input type="text" name="direccion" class="form-input" id="direccion" placeholder="Escriba su direccion">
+
+            <label form="Correo" class="form-label"> Correo Electronico</label>
+            <input type="email" name="Correo" class="form-input" id="Correo" placeholder="Escriba su correo electronico">
+
+            <label form="mensaje" class="form-label"> Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Dejenos aqui su mensaje"></textarea>
+            
+            <input type="submit" class="btn-submit" value="Enviar consulta" onclick="mostrarAlerta()"> 
+       
+        </form>
+    </div>
+
+</body>
+</html>

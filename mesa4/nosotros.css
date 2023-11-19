@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    padding: 1em;
+
+}
+
+header h2{
+    background-color:#ea9b29;
+    color: white;
+    text-align: center;
+    padding: 20px
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+}
+
+h2{
+    color: #333;
+
+}
+
+p{
+    line-height: 1.6;
+    color: #666;
+
+}
+
